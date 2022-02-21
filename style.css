@@ -1,6 +1,9 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+    font-family: calibri;
+    user-select: none;
 }
 
 body{
@@ -8,17 +11,27 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: linear-gradient(to left, #870000, #190A05);
+    height: 100vh;
+    width: 100%;
 }
 
 #div{
     border-radius: 4px;
     border: 0px;
-    height: 80px;
-    width: 260px;
+    height: 70px;
+    width: 250px;
     background-color: #ff6600;
-    margin-top: 200px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
 
+#div:hover{
+    background-color: #9c460c;
+}
+
+#div:active{
+    background-color: #833a0a;
 }
 
 ::selection{
@@ -27,10 +40,7 @@ body{
 }
 
 #h1{
-    font-family: calibri;
     font-weight: 500;
     text-align: center;
-    padding-top: 18px;
-    font-size: 36px;
-    color: white;
+    line-height: 70px;
 }
